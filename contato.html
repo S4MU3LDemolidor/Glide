@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — Glide</title>
+  <meta name="description" content="Fale com a Glide. Preencha o formulário ou converse diretamente com um especialista pelo WhatsApp — respondemos com agilidade e a atenção que o seu projeto merece.">
+  <link rel="icon" href="images/symbol.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="index.html" class="nav-logo" aria-label="Glide — página inicial">
+        <img class="logo-light" src="images/logo-white.png" alt="Glide" width="120" height="34">
+        <img class="logo-dark" src="images/logo-dark.png" alt="" aria-hidden="true" width="120" height="34">
+      </a>
+      <a href="contato.html" class="nav-cta">Fale Conosco</a>
+    </div>
+  </header>
+
+  <!-- ============ MENU OVERLAY ============ -->
+  <nav class="menu" id="menu" aria-hidden="true" aria-label="Menu principal">
+    <div class="menu__bar">
+      <a href="index.html" class="menu__logo" aria-label="Glide"><img src="images/logo-white.png" alt="Glide"></a>
+      <button class="menu__close" aria-label="Fechar menu"></button>
+    </div>
+    <div class="menu__body">
+      <div class="menu__nav">
+        <a href="index.html" class="menu__link" style="--i:0">Início</a>
+        <a href="quem-somos.html" class="menu__link" style="--i:1">Quem Somos</a>
+        <a href="projetos.html" class="menu__link" style="--i:2">Projetos</a>
+        <a href="contato.html" class="menu__link is-active" style="--i:3">Contato</a>
+      </div>
+      <div class="menu__group">
+        <span class="menu__group-label">Linhas de Produto</span>
+        <div class="menu__sub">
+          <a href="portas-premium-correr.html">Portas Premium de Correr</a>
+          <a href="porta-imperial.html">Porta Imperial</a>
+          <a href="portas-premium.html">Portas Premium</a>
+          <a href="portas-elegance.html">Portas Elegance</a>
+        </div>
+      </div>
+    </div>
+    <div class="menu__footer">
+      <a href="https://wa.me/SEU_NUMERO_AQUI" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="contato.html">Contato</a>
+      <span>Atendimento personalizado do projeto à entrega.</span>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============ HERO DA PÁGINA ============ -->
+    <section class="page-hero page-hero--short">
+      <div class="page-hero__media">
+        <img src="fotosportas/Correr%20Premium/IMG_0045%20-%20Porta%20de%20Correr%20Premium.jpeg"
+             alt="Porta Glide de alto padrão integrada a parede de mármore" fetchpriority="high">
+      </div>
+      <div class="page-hero__content container">
+        <span class="eyebrow eyebrow--light">Contato</span>
+        <h1 class="page-hero__title">Vamos conversar sobre o seu projeto.</h1>
+        <p class="page-hero__subtitle">Preencha o formulário ou fale diretamente com um especialista pelo WhatsApp. Respondemos com agilidade e atenção que o seu projeto merece.</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Formulário -->
+          <div class="reveal">
+            <!-- O envio abre o WhatsApp com a mensagem preenchida.
+                 Substitua data-whatsapp pelo número real (apenas dígitos: DDI+DDD+número). -->
+            <form class="form js-contact-form" data-whatsapp="SEU_NUMERO_AQUI" novalidate>
+              <div class="field">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+              </div>
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+              </div>
+              <div class="field">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+              </div>
+              <div class="field">
+                <label for="tipo">Tipo de projeto</label>
+                <select id="tipo" name="tipo" required>
+                  <option value="" disabled selected>Selecione uma opção</option>
+                  <option value="Residencial">Residencial</option>
+                  <option value="Comercial">Comercial</option>
+                  <option value="Corporativo">Corporativo</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="mensagem">Mensagem / Descrição do projeto</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre o seu projeto, o vão e a sua visão." required></textarea>
+              </div>
+              <div class="form__submit">
+                <button type="submit" class="btn btn--primary">Enviar</button>
+                <p class="form__feedback form__note" hidden>Abrindo o WhatsApp com a sua mensagem — é só confirmar o envio por lá.</p>
+                <p class="form__note">Ao enviar, abriremos o WhatsApp com a sua mensagem pronta para confirmação.</p>
+              </div>
+            </form>
+          </div>
+
+          <!-- Aside / contato direto -->
+          <aside class="contact-aside reveal" style="--reveal-delay:.1s">
+            <span class="eyebrow">Atendimento Direto</span>
+            <h2 class="title-section">Prefere falar agora?</h2>
+            <p>Um especialista Glide está pronto para entender o seu projeto e orientar os próximos passos.</p>
+
+            <div class="contact-block">
+              <div class="contact-block__label">WhatsApp</div>
+              <a href="https://wa.me/SEU_NUMERO_AQUI" target="_blank" rel="noopener" class="btn btn--outline btn--sm" style="margin-top:8px">Fale com um especialista</a>
+            </div>
+
+            <!-- TODO: substituir pelos dados reais de contato da empresa -->
+            <div class="contact-block">
+              <div class="contact-block__label">E-mail</div>
+              <a href="mailto:contato@glideesquadrias.com.br">contato@glideesquadrias.com.br</a>
+            </div>
+
+            <div class="contact-block">
+              <div class="contact-block__label">Atendimento</div>
+              <p>Atendimento mediante agendamento.</p>
+            </div>
+
+            <div class="contact-block">
+              <div class="contact-block__label">Redes Sociais</div>
+              <div class="footer__social" style="margin-top:8px">
+                <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                </a>
+                <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+                </a>
+                <a href="https://wa.me/SEU_NUMERO_AQUI" aria-label="WhatsApp" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 4C9.93 4 4.98 8.95 4.98 15.06c0 1.95.51 3.86 1.48 5.54L4.9 27l6.57-1.72a11.02 11.02 0 0 0 4.56.98h.01c6.11 0 11.06-4.95 11.06-11.06C27.1 8.95 22.15 4 16.04 4z"/></svg>
+                </a>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img class="footer__brand-logo" src="images/logo-orange.png" alt="Glide">
+          <p class="footer__tagline">Esquadrias e fachadas de alto padrão, projetadas sob medida — com atendimento personalizado do projeto à instalação.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+            </a>
+            <a href="https://wa.me/SEU_NUMERO_AQUI" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 4C9.93 4 4.98 8.95 4.98 15.06c0 1.95.51 3.86 1.48 5.54L4.9 27l6.57-1.72a11.02 11.02 0 0 0 4.56.98h.01c6.11 0 11.06-4.95 11.06-11.06C27.1 8.95 22.15 4 16.04 4zm0 20.2h-.01c-1.41 0-2.79-.38-4-1.1l-.29-.17-3.9 1.02 1.04-3.8-.19-.3a9.13 9.13 0 0 1-1.4-4.86c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.96 6.48 2.69a9.1 9.1 0 0 1 2.68 6.48c0 5.06-4.11 9.17-9.16 9.17zm5.03-6.86c-.27-.14-1.63-.8-1.88-.9-.25-.09-.43-.13-.62.14-.18.27-.71.9-.87 1.08-.16.18-.32.2-.59.07-.27-.14-1.16-.43-2.21-1.36-.82-.73-1.37-1.63-1.53-1.9-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.62-1.49-.85-2.04-.22-.53-.45-.46-.62-.47l-.53-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.84.14.18 1.93 2.95 4.67 4.14.65.28 1.16.45 1.56.58.66.21 1.25.18 1.72.11.52-.08 1.63-.67 1.86-1.31.23-.64.23-1.19.16-1.31-.07-.12-.25-.18-.52-.32z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Navegação</div>
+          <nav class="footer__links">
+            <a href="quem-somos.html">Quem Somos</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contato.html">Contato</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Linhas</div>
+          <nav class="footer__links">
+            <a href="portas-premium-correr.html">Premium de Correr</a>
+            <a href="porta-imperial.html">Porta Imperial</a>
+            <a href="portas-premium.html">Portas Premium</a>
+            <a href="portas-elegance.html">Portas Elegance</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Contato</div>
+          <div class="footer__contact">
+            <a href="https://wa.me/SEU_NUMERO_AQUI" target="_blank" rel="noopener">Fale no WhatsApp</a>
+            <a href="mailto:contato@glideesquadrias.com.br">contato@glideesquadrias.com.br</a>
+            <p>Atendimento mediante agendamento.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span class="js-year">2026</span> Glide Esquadrias e Fachadas. Todos os direitos reservados.</span>
+        <span>Atendimento personalizado do projeto à entrega.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLUTUANTE ============ -->
+  <a class="whatsapp-float" href="https://wa.me/SEU_NUMERO_AQUI" target="_blank" rel="noopener" aria-label="Fale com um especialista no WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 4C9.93 4 4.98 8.95 4.98 15.06c0 1.95.51 3.86 1.48 5.54L4.9 27l6.57-1.72a11.02 11.02 0 0 0 4.56.98h.01c6.11 0 11.06-4.95 11.06-11.06C27.1 8.95 22.15 4 16.04 4zm0 20.2h-.01c-1.41 0-2.79-.38-4-1.1l-.29-.17-3.9 1.02 1.04-3.8-.19-.3a9.13 9.13 0 0 1-1.4-4.86c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.96 6.48 2.69a9.1 9.1 0 0 1 2.68 6.48c0 5.06-4.11 9.17-9.16 9.17zm5.03-6.86c-.27-.14-1.63-.8-1.88-.9-.25-.09-.43-.13-.62.14-.18.27-.71.9-.87 1.08-.16.18-.32.2-.59.07-.27-.14-1.16-.43-2.21-1.36-.82-.73-1.37-1.63-1.53-1.9-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.62-1.49-.85-2.04-.22-.53-.45-.46-.62-.47l-.53-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.84.14.18 1.93 2.95 4.67 4.14.65.28 1.16.45 1.56.58.66.21 1.25.18 1.72.11.52-.08 1.63-.67 1.86-1.31.23-.64.23-1.19.16-1.31-.07-.12-.25-.18-.52-.32z"/></svg>
+  </a>
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glide — Esquadrias e Fachadas de Alto Padrão</title>
+  <meta name="description" content="A Glide projeta esquadrias e fachadas de alto padrão sob medida, com atendimento 100% personalizado — do projeto à instalação. Portas que definem ambientes.">
+  <meta property="og:title" content="Glide — Esquadrias e Fachadas de Alto Padrão">
+  <meta property="og:description" content="Esquadrias e fachadas de alto padrão, projetadas sob medida. Atendimento personalizado do projeto à instalação.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/symbol.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="index.html" class="nav-logo" aria-label="Glide — página inicial">
+        <img class="logo-light" src="images/logo-white.png" alt="Glide" width="120" height="34">
+        <img class="logo-dark" src="images/logo-dark.png" alt="" aria-hidden="true" width="120" height="34">
+      </a>
+      <a href="contato.html" class="nav-cta">Fale Conosco</a>
+    </div>
+  </header>
+
+  <!-- ============ MENU OVERLAY ============ -->
+  <nav class="menu" id="menu" aria-hidden="true" aria-label="Menu principal">
+    <div class="menu__bar">
+      <a href="index.html" class="menu__logo" aria-label="Glide"><img src="images/logo-white.png" alt="Glide"></a>
+      <button class="menu__close" aria-label="Fechar menu"></button>
+    </div>
+    <div class="menu__body">
+      <div class="menu__nav">
+        <a href="index.html" class="menu__link is-active" style="--i:0">Início</a>
+        <a href="quem-somos.html" class="menu__link" style="--i:1">Quem Somos</a>
+        <a href="projetos.html" class="menu__link" style="--i:2">Projetos</a>
+        <a href="contato.html" class="menu__link" style="--i:3">Contato</a>
+      </div>
+      <div class="menu__group">
+        <span class="menu__group-label">Linhas de Produto</span>
+        <div class="menu__sub">
+          <a href="portas-premium-correr.html">Portas Premium de Correr</a>
+          <a href="porta-imperial.html">Porta Imperial</a>
+          <a href="portas-premium.html">Portas Premium</a>
+          <a href="portas-elegance.html">Portas Elegance</a>
+        </div>
+      </div>
+    </div>
+    <div class="menu__footer">
+      <a href="https://wa.me/SEU_NUMERO_AQUI" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="contato.html">Contato</a>
+      <span>Atendimento personalizado do projeto à entrega.</span>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__media">
+        <img src="fotosportas/Imperial/IMG_0067%20-%20Porta%20Imperial.jpeg"
+             alt="Fachada de residência de alto padrão com porta pivotante Glide" fetchpriority="high">
+      </div>
+      <div class="hero__content container">
+        <div class="hero__inner">
+          <span class="eyebrow eyebrow--light">Esquadrias &amp; Fachadas de Alto Padrão</span>
+          <h1 class="hero__title">Entradas que definem ambientes.</h1>
+          <p class="hero__subtitle">Esquadrias e fachadas de alto padrão, projetadas sob medida para residências, escritórios e espaços que exigem o melhor.</p>
+          <a href="https://wa.me/SEU_NUMERO_AQUI" target="_blank" rel="noopener" class="btn btn--outline-light">Solicitar Atendimento</a>
+        </div>
+      </div>
+      <span class="hero__cue" aria-hidden="true"></span>
+    </section>
+
+    <!-- ============ INTRO / MARCA ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="intro-cols">
+          <div class="intro-cols__head reveal">
+            <span class="eyebrow">Atendimento Personalizado</span>
+            <h2 class="title-section">Cada detalhe começa<br>com uma conversa.</h2>
+          </div>
+          <div class="intro-cols__body reveal" style="--reveal-delay:.1s">
+            <p class="lead">Na Glide, nenhum projeto é igual ao outro. Desde o primeiro contato, um especialista dedicado entende o seu espaço, a sua fachada e a sua visão — e traduz tudo isso em uma porta que é, antes de tudo, uma declaração de intenção.</p>
+            <p>Não vendemos produtos de prateleira. Desenvolvemos soluções sob medida, com acompanhamento técnico do projeto à entrega.</p>
+            <a href="quem-somos.html" class="text-link">Conheça nossa história <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="section section--surface section--tight">
+      <div class="container">
+        <div class="section-head reveal" style="margin-bottom:48px">
+          <span class="eyebrow">A Glide em Números</span>
+        </div>
+        <div class="stats" data-stagger="0.12">
+          <div class="stat reveal">
+            <div class="stat__num">+X</div>
+            <div class="stat__label">Anos de experiência</div>
+          </div>
+          <div class="stat reveal">
+            <div class="stat__num">+X</div>
+            <div class="stat__label">Projetos entregues</div>
+          </div>
+          <div class="stat reveal">
+            <div class="stat__num">100%</div>
+            <div class="stat__label">Atendimento personalizado</div>
+          </div>
+        </div>
+        <!-- TODO: substituir +X pelos números reais da empresa -->
+      </div>
+    </section>
+
+    <!-- ============ POR QUE A GLIDE ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Por que a Glide?</span>
+          <h2 class="title-section">O atendimento que faz a diferença.</h2>
+          <p class="lead">Enquanto a maioria das empresas te entrega um catálogo, a Glide te entrega um especialista.</p>
+        </div>
+        <div class="why-grid" data-stagger="0.08">
+          <article class="why-card reveal">
+            <div class="why-card__num">01</div>
+            <h3 class="why-card__title">Atendimento Personalizado</h3>
+            <p class="why-card__text">Você não fala com um atendente genérico. Desde o primeiro contato, um consultor técnico dedicado acompanha cada etapa do seu projeto com atenção, clareza e comprometimento real.</p>
+          </article>
+          <article class="why-card reveal">
+            <div class="why-card__num">02</div>
+            <h3 class="why-card__title">Projeto Sob Medida</h3>
+            <p class="why-card__text">Cada porta é dimensionada, modelada e curada especialmente para o seu espaço. Trabalhamos com o vão, a fachada e a identidade do projeto — nunca contra eles.</p>
+          </article>
+          <article class="why-card reveal">
+            <div class="why-card__num">03</div>
+            <h3 class="why-card__title">Qualidade Construtiva</h3>
+            <p class="why-card__text">Materiais selecionados, acabamento impecável e processos rigorosos de qualidade em cada peça que sai da nossa fábrica.</p>
+          </article>
+          <article class="why-card reveal">
+            <div class="why-card__num">04</div>
+            <h3 class="why-card__title">Do Projeto à Instalação</h3>
+            <p class="why-card__text">Acompanhamos você em todas as fases: consulta técnica, projeto, fabricação e instalação. Um processo simples, transparente e sem surpresas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NOSSAS LINHAS ============ -->
+    <section class="section section--surface">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Linhas Glide</span>
+          <h2 class="title-section">Nossas Linhas</h2>
+          <p class="lead">Quatro linhas desenvolvidas para diferentes projetos, todas com o mesmo padrão de excelência Glide.</p>
+        </div>
+        <div class="lines-grid" data-stagger="0.1">
+
+          <article class="line-card reveal">
+            <a href="portas-premium-correr.html" class="line-card__media" aria-label="Portas Premium de Correr">
+              <img src="fotosportas/Correr%20Premium/IMG_0045%20-%20Porta%20de%20Correr%20Premium.jpeg" alt="Porta de correr premium Glide em ambiente revestido de mármore" loading="lazy">
+            </a>
+            <div class="line-card__body">
+              <div class="line-card__num">01</div>
+              <h3 class="line-card__title">Portas Premium de Correr</h3>
+              <p class="line-card__text">Movimento preciso, presença elegante. Para vãos generosos onde fluidez e design precisam coexistir.</p>
+              <a href="portas-premium-correr.html" class="text-link line-card__cta">Ver mais <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="line-card reveal">
+            <a href="porta-imperial.html" class="line-card__media" aria-label="Porta Imperial">
+              <img src="fotosportas/Imperial/IMG_0068%20-%20Porta%20Imperial.jpeg" alt="Porta Imperial Glide pivotante de grandes dimensões em fachada" loading="lazy">
+            </a>
+            <div class="line-card__body">
+              <div class="line-card__num">02</div>
+              <h3 class="line-card__title">Porta Imperial</h3>
+              <p class="line-card__text">Monumentalidade em cada detalhe. A porta que transforma uma entrada em uma experiência.</p>
+              <a href="porta-imperial.html" class="text-link line-card__cta">Ver mais <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="line-card reveal">
+            <a href="portas-premium.html" class="line-card__media" aria-label="Portas Premium">
+              <img src="fotosportas/Premium/IMG_0014%20-%20Porta%20Premium.jpeg" alt="Porta Premium Glide em alumínio com acabamento escuro" loading="lazy">
+            </a>
+            <div class="line-card__body">
+              <div class="line-card__num">03</div>
+              <h3 class="line-card__title">Portas Premium</h3>
+              <p class="line-card__text">O equilíbrio perfeito entre sofisticação e funcionalidade. Acabamento superior para projetos residenciais e comerciais de alto padrão.</p>
+              <a href="portas-premium.html" class="text-link line-card__cta">Ver mais <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="line-card reveal">
+            <a href="portas-elegance.html" class="line-card__media" aria-label="Portas Elegance">
+              <img src="fotosportas/Elegance/IMG_0016%20-%20Porta%20Elegance.jpeg" alt="Porta Elegance Glide com design slim e perfil refinado" loading="lazy">
+            </a>
+            <div class="line-card__body">
+              <div class="line-card__num">04</div>
+              <h3 class="line-card__title">Portas Elegance</h3>
+              <p class="line-card__text">Design refinado, leveza visual e acabamentos que conversam com os mais variados estilos arquitetônicos.</p>
+              <a href="portas-elegance.html" class="text-link line-card__cta">Ver mais <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJETOS (PREVIEW) ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Projetos</span>
+          <h2 class="title-section">Projetos que falam por si.</h2>
+          <p class="lead">Residências, escritórios e espaços comerciais de alto padrão — cada projeto entregue é uma porta que permanece como marco do espaço.</p>
+        </div>
+      </div>
+      <div class="container container--wide" style="margin-top:48px">
+        <div class="masonry js-gallery reveal">
+          <a class="gallery-item" href="fotosportas/Imperial/IMG_0067%20-%20Porta%20Imperial.jpeg"><img src="fotosportas/Imperial/IMG_0067%20-%20Porta%20Imperial.jpeg" alt="Fachada de residência de alto padrão com porta Imperial Glide" loading="lazy"></a>
+          <a class="gallery-item" href="fotosportas/Premium/IMG_0064%20-%20Porta%20Premium.jpeg"><img src="fotosportas/Premium/IMG_0064%20-%20Porta%20Premium.jpeg" alt="Portas Premium Glide em acabamento taupe" loading="lazy"></a>
+          <a class="gallery-item" href="fotosportas/Elegance/IMG_0026%20-%20Porta%20Elegance.jpeg"><img src="fotosportas/Elegance/IMG_0026%20-%20Porta%20Elegance.jpeg" alt="Porta Elegance Glide em tom grafite com puxador alongado" loading="lazy"></a>
+          <a class="gallery-item" href="fotosportas/Correr%20Premium/IMG_0047%20-%20Porta%20de%20Correr%20Premium.jpeg"><img src="fotosportas/Correr%20Premium/IMG_0047%20-%20Porta%20de%20Correr%20Premium.jpeg" alt="Porta de correr premium Glide com acabamento prata" loading="lazy"></a>
+          <a class="gallery-item" href="fotosportas/Premium/IMG_0014%20-%20Porta%20Premium.jpeg"><img src="fotosportas/Premium/IMG_0014%20-%20Porta%20Premium.jpeg" alt="Porta Premium Glide preta em hall residencial" loading="lazy"></a>
+          <a class="gallery-item" href="fotosportas/Imperial/IMG_0068%20-%20Porta%20Imperial.jpeg"><img src="fotosportas/Imperial/IMG_0068%20-%20Porta%20Imperial.jpeg" alt="Porta Imperial Glide pivotante de grandes dimensões" loading="lazy"></a>
+          <a class="gallery-item" href="fotosportas/Elegance/IMG_0050%20-%20Porta%20Elegance.PNG"><img src="fotosportas/Elegance/IMG_0050%20-%20Porta%20Elegance.PNG" alt="Porta Elegance Glide preta com design minimalista" loading="lazy"></a>
+          <a class="gallery-item" href="fotosportas/Premium/IMG_0020%20-%20Porta%20Premium.jpeg"><img src="fotosportas/Premium/IMG_0020%20-%20Porta%20Premium.jpeg" alt="Porta Premium Glide em ambiente com guarda-corpo de vidro" loading="lazy"></a>
+        </div>
+        <div class="text-center reveal" style="margin-top:44px">
+          <a href="projetos.html" class="btn btn--outline">Ver todos os projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESSO ============ -->
+    <section class="section section--surface">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Como Trabalhamos</span>
+          <h2 class="title-section">Do Projeto à Instalação</h2>
+          <p class="lead">Um processo pensado para ser simples, transparente e sem surpresas.</p>
+        </div>
+        <div class="process" data-stagger="0.1">
+          <div class="step reveal">
+            <div class="step__num">1</div>
+            <h3 class="step__title">Consulta</h3>
+            <p class="step__text">Entendemos o vão, a fachada e a intenção do projeto.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__num">2</div>
+            <h3 class="step__title">Projeto</h3>
+            <p class="step__text">Dimensionamento, modelagem e curadoria de acabamentos.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__num">3</div>
+            <h3 class="step__title">Fabricação</h3>
+            <p class="step__text">Produção com controle rigoroso de qualidade.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__num">4</div>
+            <h3 class="step__title">Instalação</h3>
+            <p class="step__text">Entrega com precisão e acabamento impecável.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL (BAND) ============ -->
+    <section class="page-hero page-hero--short" aria-label="Fale com a Glide">
+      <div class="page-hero__media">
+        <img src="fotosportas/Elegance/IMG_0050%20-%20Porta%20Elegance.PNG" alt="Porta Glide preta de alto padrão em destaque" loading="lazy">
+      </div>
+      <div class="page-hero__content container text-center" style="display:flex;flex-direction:column;align-items:center">
+        <div class="cta-final">
+          <h2 class="title-section on-dark reveal">Tem um projeto e precisa de um<br>atendimento à altura?</h2>
+          <a href="https://wa.me/SEU_NUMERO_AQUI" target="_blank" rel="noopener" class="btn btn--outline-light reveal">Fale com um especialista</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img class="footer__brand-logo" src="images/logo-orange.png" alt="Glide">
+          <p class="footer__tagline">Esquadrias e fachadas de alto padrão, projetadas sob medida — com atendimento personalizado do projeto à instalação.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+            </a>
+            <a href="https://wa.me/SEU_NUMERO_AQUI" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 4C9.93 4 4.98 8.95 4.98 15.06c0 1.95.51 3.86 1.48 5.54L4.9 27l6.57-1.72a11.02 11.02 0 0 0 4.56.98h.01c6.11 0 11.06-4.95 11.06-11.06C27.1 8.95 22.15 4 16.04 4zm0 20.2h-.01c-1.41 0-2.79-.38-4-1.1l-.29-.17-3.9 1.02 1.04-3.8-.19-.3a9.13 9.13 0 0 1-1.4-4.86c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.96 6.48 2.69a9.1 9.1 0 0 1 2.68 6.48c0 5.06-4.11 9.17-9.16 9.17zm5.03-6.86c-.27-.14-1.63-.8-1.88-.9-.25-.09-.43-.13-.62.14-.18.27-.71.9-.87 1.08-.16.18-.32.2-.59.07-.27-.14-1.16-.43-2.21-1.36-.82-.73-1.37-1.63-1.53-1.9-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.62-1.49-.85-2.04-.22-.53-.45-.46-.62-.47l-.53-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.84.14.18 1.93 2.95 4.67 4.14.65.28 1.16.45 1.56.58.66.21 1.25.18 1.72.11.52-.08 1.63-.67 1.86-1.31.23-.64.23-1.19.16-1.31-.07-.12-.25-.18-.52-.32z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__col-title">Navegação</div>
+          <nav class="footer__links">
+            <a href="quem-somos.html">Quem Somos</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contato.html">Contato</a>
+          </nav>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__col-title">Linhas</div>
+          <nav class="footer__links">
+            <a href="portas-premium-correr.html">Premium de Correr</a>
+            <a href="porta-imperial.html">Porta Imperial</a>
+            <a href="portas-premium.html">Portas Premium</a>
+            <a href="portas-elegance.html">Portas Elegance</a>
+          </nav>
+        </div>
+
+        <!-- TODO: substituir pelos dados reais de contato da empresa -->
+        <div class="footer__col">
+          <div class="footer__col-title">Contato</div>
+          <div class="footer__contact">
+            <a href="https://wa.me/SEU_NUMERO_AQUI" target="_blank" rel="noopener">Fale no WhatsApp</a>
+            <a href="mailto:contato@glideesquadrias.com.br">contato@glideesquadrias.com.br</a>
+            <p>Atendimento mediante agendamento.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; <span class="js-year">2026</span> Glide Esquadrias e Fachadas. Todos os direitos reservados.</span>
+        <span>Atendimento personalizado do projeto à entrega.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLUTUANTE ============ -->
+  <a class="whatsapp-float" href="https://wa.me/SEU_NUMERO_AQUI" target="_blank" rel="noopener" aria-label="Fale com um especialista no WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 4C9.93 4 4.98 8.95 4.98 15.06c0 1.95.51 3.86 1.48 5.54L4.9 27l6.57-1.72a11.02 11.02 0 0 0 4.56.98h.01c6.11 0 11.06-4.95 11.06-11.06C27.1 8.95 22.15 4 16.04 4zm0 20.2h-.01c-1.41 0-2.79-.38-4-1.1l-.29-.17-3.9 1.02 1.04-3.8-.19-.3a9.13 9.13 0 0 1-1.4-4.86c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.96 6.48 2.69a9.1 9.1 0 0 1 2.68 6.48c0 5.06-4.11 9.17-9.16 9.17zm5.03-6.86c-.27-.14-1.63-.8-1.88-.9-.25-.09-.43-.13-.62.14-.18.27-.71.9-.87 1.08-.16.18-.32.2-.59.07-.27-.14-1.16-.43-2.21-1.36-.82-.73-1.37-1.63-1.53-1.9-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.62-1.49-.85-2.04-.22-.53-.45-.46-.62-.47l-.53-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.84.14.18 1.93 2.95 4.67 4.14.65.28 1.16.45 1.56.58.66.21 1.25.18 1.72.11.52-.08 1.63-.67 1.86-1.31.23-.64.23-1.19.16-1.31-.07-.12-.25-.18-.52-.32z"/></svg>
+  </a>
+
+</body>
+</html>
