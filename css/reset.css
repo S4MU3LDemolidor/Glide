@@ -96,6 +96,6 @@ a:focus-visible {
 }
 
 ::selection {
-  background: var(--color-dark);
+  background: var(--color-brand);
   color: #fff;
 }

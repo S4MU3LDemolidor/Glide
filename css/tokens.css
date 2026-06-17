@@ -15,6 +15,9 @@
   --color-light:        #8A8A8A;   /* textos de apoio, labels, rodapé */
   --color-accent:       #1A1A1A;   /* destaque — botões CTA principais */
   --color-accent-hover: #333333;   /* hover dos botões */
+  --color-brand:        #FF3B00;   /* laranja Glide — cor da marca */
+  --color-brand-hover:  #E63500;   /* hover do laranja */
+  --color-brand-soft:   rgba(255, 59, 0, 0.08); /* fundo laranja sutil */
   --color-border:       #E0E0E0;   /* bordas, linhas divisórias */
   --color-border-soft:  #ECECEC;   /* bordas muito sutis */
   --color-whatsapp:     #25D366;   /* ícone flutuante WhatsApp */
