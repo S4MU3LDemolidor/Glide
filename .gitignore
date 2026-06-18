@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Ferramentas / config local
+.claude/
+
+# Logs e temporários
+*.log
+*.tmp
+Thumbs.db

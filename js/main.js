@@ -12,11 +12,10 @@
   'use strict';
 
   /* --------------------------------------------------------
-     0. Config — número de WhatsApp (substituir antes de publicar)
+     0. Config — número de WhatsApp
      -------------------------------------------------------- */
-  // Trocar SEU_NUMERO_AQUI pelo número real, ex: 5562999999999
-  // (somente dígitos, com DDI + DDD). Os links no HTML usam o
-  // mesmo placeholder e podem ser substituídos por find & replace.
+  // Número oficial Glide: 5563981189964 (DDI 55 + DDD 63 + 98118-9964).
+  // Usado nos links do HTML e como fallback do formulário de contato.
 
   /* --------------------------------------------------------
      1. NAVBAR — estado sólido
@@ -241,7 +240,7 @@
         msg
       ];
       var texto = encodeURIComponent(linhas.join('\n'));
-      var numero = form.getAttribute('data-whatsapp') || 'SEU_NUMERO_AQUI';
+      var numero = form.getAttribute('data-whatsapp') || '5563981189964';
       window.open('https://wa.me/' + numero + '?text=' + texto, '_blank');
 
       var note = form.querySelector('.form__feedback');
